@@ -1,8 +1,10 @@
-
+import NotesList from './components/NotesFolder/NotesList';
+import useStyles from './styles';
 function App() {
+  const classes=useStyles();
   return (
-    <div className="App">
-      <h1>hello world</h1>
+    <div className={classes.container} >
+       <NotesList/>
     </div>
   );
 }
