@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core";
 
 export default makeStyles({
    Note:{
-    backgroundColor:'#E6E6FA',
+    background:'#F0FFF0',  
     borderRadius:'10px',
     minHeight:'200px',
     display:'flex',
