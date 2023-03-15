@@ -1,15 +1,15 @@
+import React, {useEffect}  from 'react';
 import NoteInput from './components/InputFolder/NoteInput';
 import NotesList from './components/NotesFolder/NotesList';
 import useStyles from './styles';
 import { useDispatch } from 'react-redux';
-import { useEffect } from 'react';
 import {getNotes} from './actions/noteActions';
 function App() {
   const classes=useStyles();
-  const dispatch=useDispatch();
+  const dispatch =useDispatch();
 
-  useEffect=(()=>{
-     dispatch(getNotes());
+  useEffect(()=>{
+      dispatch(getNotes());
   },[dispatch]);
   return (
     <div className={classes.container} >

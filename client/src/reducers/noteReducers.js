@@ -1,4 +1,4 @@
-export default (noteReducers=[], action) => {
+export default (noteReducers= [], action) => {
     switch (action.type) {
         case 'FETCH_ALL_NOTES':
             return action.payload;
@@ -7,4 +7,4 @@ export default (noteReducers=[], action) => {
         default:
            return noteReducers;
     }
-}
+};
